@@ -22,7 +22,7 @@
 3. 위 1번에서 깃 설정정보에 name, email이 내 정보가 아닐 때
 4. 'git config --global user.email "hanull0219@gmail.com"' 이메일 설정
 5. 'git config --global user.name "hanull0219"' 이름 설정(메일아이디 동일)
-6. 'hit config --list' 위 4~5번 설정 올바르게 됐는지 확인
+6. 'git config --list' 위 4~5번 설정 올바르게 됐는지 확인
 ---
 7. 'git init' 현재 폴더를 작업 디렉터리 폴더로 연결, 폴더경로 옆에 **master** 표시 생기면 성공!
 8. 'git branch -M main' 깃 디렉터리 명칭을 브랜치라 부름. 해당 브랜치명을 개인에 맞게 변경. 기본이 **main**
@@ -41,3 +41,7 @@
 * 'git commit -m "기록메세지"'
 * 'git push origin main'
 * 필요 시 중간 점검용으로 'git log' 또는 'git status'
+# HTML 작성법
+* '<시작태그 속성="값" 속성="값"></닫기태그>'
+* 시작태그부터 닫기태그까지 한 번에 **요소(element)**란 명칭으로 부른다.
+* 속성은 시작태그에만 쓰고 닫기태그에는 속성을 쓰지 않는다.
