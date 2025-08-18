@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Google</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 웹글꼴 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Reset -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/google_login.css">
+    <style>
+        /* 내부 스타일 시트(HTML간 공유 불가하므로 외부연결을 권장) */
+    
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>Welcome back</h1>
+        <p>Welcome back! Please enter your details.</p>
+        <!-- form--block | 선택, 입력 양식을 묶는 그룹--> 
+        <form action="#" method="post" id="login_frm">
+            <fieldset class="id_pw_group"><!-- block -->
+                <legend>입력양식</legend><!-- inline -->
+                <dl>
+                    <dt>Email</dt>
+                    <dd><input type="text" name="user_email_id" id="user_email_id" class="id_pw" placeholder="Enter your email or id"></dd>
+                    <dt>Password</dt>
+                    <dd><input type="password" name="user_pw" id="user_pw" class="id_pw" placeholder="Enter your password"></dd>
+                </dl>
+                <p class="error">Please enter your ID</p>
+            </fieldset>
+            <fieldset class="btn_search_group">
+                <legend>버튼&찾기</legend>
+                <h2>Forgot password</h2>
+                <!-- 로그인 버튼 -->
+                <p><button type="submit" id="login_btn" class="btn">login</button></p>
+                <!-- 구글 로그인 -->
+                <p><a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fhl%3Dko%26ictx%3D0%26sa%3DX%26ved%3D0ahUKEwi7iLPbu5OPAxU_ka8BHUPFNbQQpYkNCAo&dsh=S421330012%3A1755489558106728&ec=futura_exp_og_so_72776762_e&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=ko&ifkv=AdBytiN6bK33NQUVKw69ZW0KW2J_aNl36Pykx1T1JB-As3hJAJ_-AV6AgNHEcQ8MVedhjPXNcG7e" target="_blank" id="sign_google" class="btn">Sign in with Google</a></p>
+                <!-- 기타 로그인 -->
+                <p class="account">Don't have on account? <a href="#" class="sign_up">Sign up for free</a></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
