@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musescore | login</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/musescore_login.css">
+</head>
+<body>
+    <h1>Login to Muesecore</h1>
+    <h2>Don't have an account? <a href="#">Sign Up</a></h2>
+    <div id="sns_login">
+        <a href="#"><img src="./images/google.jpg" alt="google_login">Continue with Google</a>
+        <a href="#"><img src="./images/facebook.jpg" alt="facebook_login"></a>
+        <a href="#"><img src="./images/apple.jpg" alt="apple_login"></a>
+    </div>
+    <div class="line">
+        <span>or</span>
+    </div>
+    <form action="#" method="post" id="login_frm">
+        <dl>
+            <dt>Email or username</dt>
+            <dd><input type="text" name="user_id" id="user_id" class="id"></dd>
+            <dt>Password</dt>
+            <dt>Forgot your password?</dt>
+            <dd><input type="text" name="user_pw" id="user_pw" class="pw"></dd>
+        </dl>
+        <button type="submit" id="login_btn">Log in</button>
+    </form>
+</body>
+</html>

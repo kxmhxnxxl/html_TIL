@@ -1,0 +1,31 @@
+body {width:380px; height:400px; padding:25px;
+    background:skyblue;}
+body h1 {
+    font-size:2.25rem; font-weight:700;
+    text-align:center;
+    margin:0 0 10px;
+}
+body h2 {
+    font-weight:300; color:#666;
+    text-align:center;
+    margin:0 0 24px;
+}
+body h2 a {
+    font-weight:400; color:#6B5DFE;
+}
+body #sns_login {}
+body #sns_login a {}
+body #sns_login a:first-child {
+    padding:14px 30px 14px 7px; font-size:0.875rem;
+    background:#6B5DFE; color:#fff;
+    border-radius:30px;
+}
+body .line {}
+body .line span {}
+body #login_frm {}
+body #login_frm dl {}
+body #login_frm dl dt {}
+body #login_frm dl dt dd {}
+body #login_frm dl dt dd #user_id {}
+body #login_frm dl dt dd #user_pw {}
+body #login_frm #login_btn {}
