@@ -9,6 +9,7 @@
     --text-title50:3.125rem;
     --text-sub32:2rem;
     --text-kwd24:1.5rem;
+    --text-ft14:0.875rem;
     /* 행간 */
     --line-title:0.9;
     --line-contents:1.5;
@@ -146,3 +147,65 @@
 #wrap header .right_menu li:nth-child(2) .lang_select a .cn {}
 /* 메인 */
 #wrap main {}
+/* footer */
+#wrap footer {padding:0 80px;}
+#wrap footer *:nth-child(odd){}
+#wrap footer *:nth-child(even){}
+#wrap footer .ft_top {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between; align-items:center;
+    padding:50px 0 0 0;
+}
+#wrap footer .ft_top .menu {display:flex; gap:40px; align-items:center;}
+#wrap footer .ft_top .menu a {
+    font-weight:var(--weight-medium);
+}
+#wrap footer .ft_top .menu a:first-child {color:var(--color-sky); font-weight:var(--weight-semibold);}
+#wrap footer .ft_top .menu a:nth-child(2) {color:var(--color-coral); font-weight:var(--weight-semibold);}
+#wrap footer .ft_top .menu a img {
+    width:65px; height:55px;
+}
+#wrap footer .ft_top .site_all {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    gap:20px;
+}
+#wrap footer .ft_top .site_all li {
+    position:relative;}
+#wrap footer .ft_top .site_all li:nth-child(1) p {width:174px;}
+#wrap footer .ft_top .site_all li:nth-child(2) p {width:140px;}
+#wrap footer .ft_top .site_all li p {
+    background-color:var(--color-white);
+    background-image:url(../images/list.png);
+    background-size:10px;
+    background-repeat:no-repeat;
+    background-position:90% center;
+    line-height:40px; padding-left:10px;
+    border:1px solid var(--color-gray80);
+}
+#wrap footer .ft_top .site_all li:nth-child(1):hover .family_list {display:block;}
+#wrap footer .ft_top .site_all li .family_list {
+    background:var(--color-white);
+    position:absolute;
+    width:100%;
+    /* abolute의 부모 relative의 너비만큼 차지하라 */
+    bottom:70px;
+    height:250px; overflow:auto;
+    border:1px solid var(--color-gray4);
+    display:none;
+} /* 초기 숨기기 */
+#wrap footer .ft_top .site_all li .family_list li {padding:10px;}
+#wrap footer .ft_top .site_all li .family_list li a {}
+#wrap footer .ft_top .site_all li .sitemap_wrap {display:none;} /* 초기 숨기기 */
+#wrap footer .ft_top .site_all li .family_list li .sitemap_wrap .sitemap_contents {}
+#wrap footer .ft_top .site_all li .sitemap_wrap .sitemap_contents h2 {}
+#wrap footer .ft_top .site_all li .sitemap_wrap .sitemap_contents .close {}
+#wrap footer .ft_bottom {}
+#wrap footer .ft_bottom address {margin:0 0 26px 0;}
+#wrap footer .ft_bottom address,
+#wrap footer .ft_bottom p {
+    font-size:var(--text-ft14); line-height:var(--line-contents); 
+    letter-spacing:var(--letter-minus2);
+    color:var(--color-gray80);
+}
+#wrap footer .ft_bottom p {}
