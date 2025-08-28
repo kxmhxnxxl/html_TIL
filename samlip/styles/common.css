@@ -5,22 +5,31 @@
     --text-contents21:1.313rem;
     --text-menu18:1.125rem;
     --text-sub12:0.75rem;
+    --text-syb10:0.625rem;
+    --text-title50:3.125rem;
+    --text-sub32:2rem;
+    --text-kwd24:1.5rem;
     /* 행간 */
-    --line-contents:1.5;
     --line-title:0.9;
+    --line-contents:1.5;
     /* 자간 */
     --letter-minus2:-0.02rem;
     /* 굵기 */
     --weight-bold:700;
     --weight-semibold:600;
+    --weight-medium:500;
     /* 색상(테두리색, 배경색, 글자색 등) */
     --color-white:#fff;
     --color-gray4:#444;
     --color-graya:#aaa;
+    --color-gray80:#808080;
     --color-brown:#642c10;
     --color-indigo:#1d356d;
     --color-coral:#d43936;
+    --color-sky:#36b4e5;
+    --color-yellow:#f3c300;
     /* 정보 */
+    --width-desktop-1140:1140px;
     --width-desktop:1440px;
     --margin-desktop-1-r-80:80px;
 }
