@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {background-color:greenyellow; max-width:1000px; margin:100px auto;}
+        main .coffee {width:200px; display:block; border:1px solid red;}
+        main .coffee img {width:100%;}
+        main .c1 {transition:transform 0.3s;}
+        main .c1:hover {
+            /* trasnform:속성(값) 속성(값) 속성(값); */
+            transform:scale(0.8);
+        }
+        main .c2 {
+            transition:transform 0.2s;
+            transform-origin:right top; /* 고정할 점 */
+        }
+        main .c2:hover {
+            /* 양수 : 시계방향, 음수 : 반시계방향 */
+            transform:rotate(-20deg) scale(1.5);
+        }
+        main .c3 {transition:transform 0.2s; transform-origin:left top;}
+        main .c3:hover {
+            transform:skewX(20deg) rotate(-10deg) scale(0.8); /* 기울기 주기 / 양수 : 우측, 좌측 : 좌측 */
+        }
+        main .c4 {transition:transform 0.3s;}
+        main p:hover .c4 {
+            transform:translate(200px, 10px) rotate(5deg) scale(1.2) skewY(10deg);
+        }
+        /* 흔들림이 심하다면 선택자(특히 hover위치)가 잘못된 건 아닌지 생각해보기 */
+    </style>
+</head>
+<body>
+    <main>
+        <a href="#"><img class="coffee c1" src="./coffee_images/starbucks1.png" alt=""></a>
+        <a href="#"><img class="coffee c2" src="./coffee_images/starbucks1.png" alt=""></a>
+        <a href="#"><img class="coffee c3" src="./coffee_images/starbucks1.png" alt=""></a>
+        <p><a href="#"><img class="coffee c4" src="./coffee_images/starbucks1.png" alt=""></a></p>
+    </main>
+</body>
+</html>
